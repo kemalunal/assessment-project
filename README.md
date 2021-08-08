@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
+### What I used.
+- Angular
+- SCSS with Tailwind.
+- Responsive design.
+- Typescript
+- RxJS
+- Redux Pattern(ngrx)
+
 This project gets users from https://jsonplaceholder.typicode.com/users API, shows user list. If you click the user item in the user list, you can see the user details.
 
 > In user detail page, Get In Touch button is added as a design item it not works.
