@@ -1,0 +1,41 @@
+.user-detail {
+  @apply font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover;
+
+  &__list-link{
+    @apply ml-4 text-sm md:text-base font-bold cursor-pointer;
+  }
+
+  &__container {
+    @apply max-w-4xl flex items-center justify-center flex-wrap mx-auto my-32 lg:my-0;
+  }
+
+  &__profile {
+    @apply w-full md:w-3/5 rounded-lg shadow-2xl bg-white opacity-75 mx-6 p-4 md:p-12 text-center lg:rounded-l-lg lg:mx-0 lg:text-left;
+
+    &-image {
+      @apply block shadow-xl mx-auto -mt-16 h-52 w-52 bg-cover bg-center rounded-full;
+    }
+
+    &-name {
+      @apply text-center text-3xl mt-5 font-bold pt-3;
+    }
+
+    &-line {
+      @apply opacity-25 border-blue-700 mx-auto lg:mx-0 mt-3 border-b-2;
+    }
+
+    &-title {
+      @apply pt-4 text-base font-bold flex items-center justify-center lg:justify-start;
+    }
+
+    &-info {
+      @apply pt-2 text-xs md:text-sm flex items-center justify-center md:justify-start border-b text-gray-600;
+    }
+
+    &-button {
+      @apply bg-blue-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full;
+    }
+
+  }
+
+}

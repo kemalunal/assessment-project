@@ -1,0 +1,41 @@
+.user-list {
+  @apply relative w-full bg-white;
+
+  &__container {
+    @apply w-full px-4 pt-16 pb-16 relative mx-auto bg-top bg-cover max-w-6xl lg:py-6 lg:pb-32;
+  }
+
+  &__title {
+    @apply text-gray-900 text-center text-3xl font-bold tracking-tight  sm:text-4xl mb-4;
+  }
+
+  &__description {
+    @apply text-center text-base text-gray-700 md:text-lg;
+  }
+
+  &__grid {
+    @apply mt-10 grid gap-10 gap-x-8 sm:gap-x-10 sm:grid-cols-2 lg:grid-cols-3;
+
+    &-item {
+      @apply flex items-center cursor-pointer;
+
+      &-image {
+        @apply object-cover w-24 h-24 rounded-full mr-4 shadow;
+      }
+
+      &-info {
+        @apply relative;
+      }
+
+      &-name {
+        @apply text-lg font-bold text-gray-800;
+      }
+
+      &-company {
+        @apply text-sm text-gray-600;
+      }
+    }
+  }
+
+}
+

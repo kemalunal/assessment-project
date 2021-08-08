@@ -1,0 +1,26 @@
+<section class="user-detail">
+  <a class="user-detail__list-link" (click)="goUserlist()"> < Return Back</a>
+
+  <div class="user-detail__container" *ngIf="user$ | async as user">
+    <div class="user-detail__profile">
+      <div class="user-detail__profile-image" style="background-image: url('../../../assets/image/profile-image.webp')">
+      </div>
+      <h1 class="user-detail__profile-name">{{user.name}}</h1>
+      <hr class="user-detail__profile-line"/>
+      <p class="user-detail__profile-title">Info</p>
+      <p class="user-detail__profile-info">@{{user.username}}</p>
+      <p class="user-detail__profile-info">{{user.email}}</p>
+      <p class="user-detail__profile-info">{{user.phone}}</p>
+      <p class="user-detail__profile-info">
+        <a href="https://{{user.website}}">{{user.website}}</a>
+      </p>
+      <p class="user-detail__profile-info">{{user.company.name}}</p>
+
+      <div class="pt-12 pb-8">
+        <button class="user-detail__profile-button">
+          Get In Touch
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

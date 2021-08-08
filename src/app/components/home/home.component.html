@@ -1,0 +1,16 @@
+<section class="user-list">
+  <div class="user-list__container">
+    <h1 class="user-list__title">User List</h1>
+    <p class="user-list__description">Click to see user details</p>
+    <div class="user-list__grid">
+      <div class="user-list__grid-item" *ngFor="let user of this.userList$ | async"
+           (click)="openUserDetail(user.id)">
+        <img src="/assets/image/profile-image.webp" alt="profile" class="user-list__grid-item-image"/>
+        <div class="user-list__grid-item-info">
+          <p class="user-list__grid-item-name">{{user.name}}</p>
+          <p class="user-list__grid-item-company">{{user.company.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
